@@ -1,0 +1,9 @@
+print("activated")
+game:GetService("RunService").Heartbeat:Connect(
+	function()
+		
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame +
+				game.Players.LocalPlayer.Character.Humanoid.MoveDirection * 1.3
+		
+	end)
